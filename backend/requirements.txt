@@ -1,0 +1,27 @@
+# --- TLS: trust the OS certificate store (needed behind corporate proxies) ---
+truststore==0.10.1
+
+# --- Core API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-dotenv==1.0.1
+PyJWT==2.10.1
+
+# --- LLM inference (cloud-hosted) ---
+groq==0.13.1
+
+# --- Document parsing & hierarchical chunking ---
+docling==2.26.0
+docling-core==2.23.1
+
+# --- Embeddings / retrieval ---
+sentence-transformers==3.3.1
+fastembed==0.8.0
+# mmh3 5.x ships prebuilt wheels for Python 3.13 (4.x would compile from source)
+mmh3>=5.1.0
+qdrant-client==1.12.2
+
+# --- Data / SQL RAG ---
+pandas==2.2.3
+tabulate==0.9.0
